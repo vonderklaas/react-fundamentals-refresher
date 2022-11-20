@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Parent,
+.Child {
+  border: 1px solid black;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
