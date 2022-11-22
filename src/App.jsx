@@ -28,6 +28,13 @@ import { Form } from './components/Form';
 import { PostList } from './components/PostList';
 import { PostForm } from './components/PostForm';
 
+// JSX
+import { JSX } from './components/JSX';
+import { NoJSX } from './components/NoJSX';
+
+// Product
+import { Product } from './components/Product';
+
 const App = () => {
   const [query, setQuery] = useState('');
 
@@ -77,6 +84,27 @@ const App = () => {
           );
         })}
       </div>
+      <br />
+      <JSX />
+      <NoJSX />
+
+      {/* PROPS */}
+      <Product
+        name='Amazon Echo'
+        description='Your AI Assistant'
+        price={59.99}
+      />
+      <Product
+        name='iPhone 14 Pro'
+        description='The best iPhone'
+        price={1059.99}
+      />
+      <Product
+        name='Macbook Pro'
+        description='Your favourite computer'
+        price={2359.99}
+      />
+      {/* END PROPS */}
     </div>
   );
 };
